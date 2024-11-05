@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100..700&family=Nanum+Myeongjo&display=swap');
+
+body {
+    background-color: rgb(242, 243, 247);
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "nav"
+        "main"
+        "footer";
+}
+
+.nav {
+    grid-area: nav;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #DFF2EB;
+}
+
+.main {
+    grid-area: main;
+    padding: 20px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    grid-area: footer;
+    background-color: #7AB2D3;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer a {
+    color: white !important;
+    word-break: break-all;
+}
+
+.logo {
+    font-family: "Nanum Myeongjo", serif;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+a:visited {
+    color: rgb(0, 0, 0);
+}
+
+.crumb {
+    padding: 0 10px;
+}
+
+.ulist {
+    display: flex;
+    margin-left: auto;
+}
+
+/* للشاشات المتوسطة والصغيرة */
+@media screen and (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .ulist {
+        margin: 0 auto;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    ul {
+        font-size: 16px;
+    }
+}
+
+/* للشاشات الصغيرة جداً */
+@media screen and (max-width: 480px) {
+    .nav {
+        padding: 10px;
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .crumb {
+        padding: 5px 0;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+}
+#but{
+    margin: 0 0 10px 0;
+}
+
+.about{
+    Display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    
+}
+
+#pabout{
+    font-size: 20px;
+}
+
+.Connect{
+    font-size: 26px;
+}

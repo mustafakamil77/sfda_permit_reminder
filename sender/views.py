@@ -7,7 +7,13 @@ def AllPermit(request):
     Allpermit = SdfaPermit.objects.all()
 
     return render(request, 'index.html', {'Allpermit': Allpermit})
+def Connect(request):
+    
+    return render(request, 'Connect.html', )
 
+def About(request):
+    
+    return render(request, 'about.html', )
 def PermitForm(request):
     if request.method == 'POST':
         form = NewPermitForm(request.POST)

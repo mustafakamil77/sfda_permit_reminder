@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS50x 2024 Project</title>
+    <link rel="stylesheet" href="{% static '/styls.css' %}">
+</head>
+
+<body>
+    <div class="content">
+        <div class="nav">
+            <div class="logo">
+                <a href="#">CS50x Project</a>
+            </div>
+            <div class="ulist">
+                <ul>
+                    <li class="crumb"><a href="#">Home</a></li>
+                    <li class="crumb"><a href="#">Contact</a></li>
+                    <li class="crumb"><a href="#">About</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="main">
+
+            {% block content %}
+
+
+
+
+            {% endblock %}
+
+
+
+
+
+        </div>
+        <div class="footer">
+
+            <footer id="footer">
+                <div class="container">
+                    <a href="mailto:mustafakamil.77@gmail.com">mustafakamil.77@gmail.com</a>
+                </div>
+            </footer>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
